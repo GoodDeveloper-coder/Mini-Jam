@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GlobalValues : MonoBehaviour
 {
-    public int Money1;
-    public int Money2;
+    public float Money1;
+    public float Money2;
 
     // Start is called before the first frame update
     void Start()

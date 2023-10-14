@@ -243,7 +243,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -204.83438, w: -34.593338}
+  m_margin: {x: 0, y: 0, z: -605.16425, w: -34.593338}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -509,6 +509,7 @@ MonoBehaviour:
   MoneyText1: {fileID: 60487595}
   MoneyText2: {fileID: 2077464212}
   GlobalValues: {fileID: 1528596156}
+  transitionSpeed: 100
 --- !u!114 &1528596156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +719,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -204.83438, w: -34.593338}
+  m_margin: {x: -22.03914, y: 0, z: -329.0081, w: -34.593338}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
