@@ -11,7 +11,10 @@ public class PlayerPool : MonoBehaviour
 
     void Start()
     {
-        
+        CharacterMovementScript controller = players[_selectedPlayer].GetComponent<CharacterMovementScript>();
+        BulletShootScript bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
+        bullet.enabled = true;
+        controller.enabled = true;
     }
 
     void Update()
@@ -29,12 +32,24 @@ public class PlayerPool : MonoBehaviour
         {
            renderer.material = _noOutline;
         }
+        CharacterMovementScript controller = players[_selectedPlayer].GetComponent<CharacterMovementScript>();
+        BulletShootScript bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
+        controller.enabled = false;
+        bullet.enabled = false;
+
         _selectedPlayer = (_selectedPlayer + 1) % players.Count;
         renderer = players[_selectedPlayer].GetComponent<SpriteRenderer>();
         if (renderer != null)
         {
             renderer.material = _outline;
         }
+
+        controller = players[_selectedPlayer].GetComponent<CharacterMovementScript>();
+        bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
+
+        controller.enabled = true;
+        bullet.enabled = true;
+
 
     }
 }
