@@ -19,4 +19,12 @@ public class BulletPrefabScript : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "InkCharacter" || collision.tag == "Wall")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
