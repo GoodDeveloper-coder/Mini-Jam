@@ -4,30 +4,26 @@ using UnityEngine;
 
 public class CharacterMovementScript : MonoBehaviour
 {
-    Rigidbody2D body;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] int playerID = 1;
 
-    float horizontal;
-    float vertical;
-
-    public float runSpeed = 20.0f;
-
-
-    // Start is called before the first frame update
-    void Start()
+    public int GetPlayerId()
     {
-        body = GetComponent<Rigidbody2D>();
+        return playerID;
     }
 
-    // Update is called once per frame
+    public void SetPlayerId(int id)
+    {
+        playerID = id;
+    }
+
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-    }
+        float horizontal = Input.GetAxis("Horizontal_P" + playerID);
+        float vertical = Input.GetAxis("Vertical_P" + playerID);
 
-    private void FixedUpdate()
-    {
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        Vector3 movement = new Vector3(horizontal, vertical, 0).normalized;
+        transform.Translate(movement * moveSpeed * Time.deltaTime);
     }
 
 }

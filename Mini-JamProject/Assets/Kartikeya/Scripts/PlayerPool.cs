@@ -7,6 +7,7 @@ public class PlayerPool : MonoBehaviour
     [SerializeField] List<InkPlayer> players;
     [SerializeField] Material _outline;
     [SerializeField] Material _noOutline;
+    [SerializeField] int playerID;
     private int _selectedPlayer = 0;
 
     void Start()
@@ -15,11 +16,17 @@ public class PlayerPool : MonoBehaviour
         BulletShootScript bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
         bullet.enabled = true;
         controller.enabled = true;
+
+        for(int i = 0; i < players.Count; i++)
+        {
+            controller = players[i].GetComponent<CharacterMovementScript>();
+            controller.SetPlayerId(playerID);
+        }
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown((playerID == 1) ? KeyCode.E : KeyCode.Space))
         {
             SelectNextPlayer();
         }
