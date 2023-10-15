@@ -12,14 +12,12 @@ public class PlayerPool : MonoBehaviour
 
     void Start()
     {
-        CharacterMovementScript controller = players[_selectedPlayer].GetComponent<CharacterMovementScript>();
-        BulletShootScript bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
-        bullet.enabled = true;
-        controller.enabled = true;
+        ToggleCharacterScripts(_selectedPlayer, true);
+        ToggleOutline(_selectedPlayer, true);
 
         for(int i = 0; i < players.Count; i++)
         {
-            controller = players[i].GetComponent<CharacterMovementScript>();
+            CharacterMovementScript controller = players[i].GetComponent<CharacterMovementScript>();
             controller.SetPlayerId(playerID);
         }
     }
@@ -32,30 +30,33 @@ public class PlayerPool : MonoBehaviour
         }
     }
 
+    private void ToggleCharacterScripts(int i, bool on)
+    {
+        CharacterMovementScript controller = players[i].GetComponent<CharacterMovementScript>();
+        BulletShootScript bullet = players[i].GetComponent<BulletShootScript>();
+        controller.enabled = on;
+        bullet.enabled = on;
+
+    }
+
+    private void ToggleOutline(int i, bool on)
+    {
+        SpriteRenderer renderer = players[i].GetComponent<SpriteRenderer>();
+        if (renderer != null)
+        {
+            renderer.material = on ? _outline : _noOutline;
+        }
+    }
+
     void SelectNextPlayer()
     {
-        SpriteRenderer renderer = players[_selectedPlayer].GetComponent<SpriteRenderer>();
-        if (renderer != null)
-        {
-           renderer.material = _noOutline;
-        }
-        CharacterMovementScript controller = players[_selectedPlayer].GetComponent<CharacterMovementScript>();
-        BulletShootScript bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
-        controller.enabled = false;
-        bullet.enabled = false;
+        ToggleOutline(_selectedPlayer, false);
+        ToggleCharacterScripts(_selectedPlayer, false);
 
         _selectedPlayer = (_selectedPlayer + 1) % players.Count;
-        renderer = players[_selectedPlayer].GetComponent<SpriteRenderer>();
-        if (renderer != null)
-        {
-            renderer.material = _outline;
-        }
-
-        controller = players[_selectedPlayer].GetComponent<CharacterMovementScript>();
-        bullet = players[_selectedPlayer].GetComponent<BulletShootScript>();
-
-        controller.enabled = true;
-        bullet.enabled = true;
+        
+        ToggleOutline(_selectedPlayer, true);
+        ToggleCharacterScripts(_selectedPlayer, true);
 
 
     }
