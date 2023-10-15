@@ -37,8 +37,7 @@ public class CharacterMovementScript : MonoBehaviour
         Vector3 movement = new Vector3(horizontal, vertical, 0).normalized;
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
-
-        if (movement.magnitude > 0)
+        if (movement.magnitude > 0.1)
         {
             animator.SetBool("IsWalking", true);
         }
