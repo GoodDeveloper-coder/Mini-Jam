@@ -17,7 +17,7 @@ public class BulletShootScript : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)){
-            Instantiate(BulletPrefab, BulletPrefabSpawnPosition.transform.position, Quaternion.identity);
+            Instantiate(BulletPrefab, BulletPrefabSpawnPosition.transform.position, BulletPrefabSpawnPosition.transform.rotation);
         }
         
     }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InkCharacter
   - Wall
+  - Bullet
   layers:
   - Default
   - TransparentFX
