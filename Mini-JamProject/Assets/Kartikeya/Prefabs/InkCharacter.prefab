@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 252970646997258943}
   - component: {fileID: 4940045696909827295}
   - component: {fileID: 6687431971065195646}
+  - component: {fileID: 5594637658203326802}
   m_Layer: 0
   m_Name: InkCharacter
   m_TagString: Untagged
@@ -159,3 +160,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765596aa80e54fc499b93c39c314a4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5594637658203326802
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4680357069241863226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4dfe4d924f06e9f498e8dc16db41aa4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
