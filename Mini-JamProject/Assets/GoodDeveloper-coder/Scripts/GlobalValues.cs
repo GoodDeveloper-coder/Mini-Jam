@@ -10,6 +10,9 @@ public class GlobalValues : MonoBehaviour
     public int LeftTeamCounterOfPoints;
     public int RightTeamCounterOfPoints;
 
+    public int LeftTeamShootedTimes;
+    public int RightTeamShootedTimes;
+
     // Start is called before the first frame update
     void Start()
     {

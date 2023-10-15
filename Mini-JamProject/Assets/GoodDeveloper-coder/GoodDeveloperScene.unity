@@ -412,6 +412,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377762925}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: TeamID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.85
@@ -607,6 +615,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1800875399}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: TeamID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6
@@ -886,6 +902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 1325109811}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &158201759
 Rigidbody2D:
   serializedVersion: 4
@@ -1024,6 +1042,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377762925}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: TeamID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.96
@@ -2048,6 +2074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 260477931}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!212 &455832563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2331,6 +2359,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1800875399}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: TeamID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.45
@@ -2423,6 +2459,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377762925}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: TeamID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.87
@@ -2484,6 +2528,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377762925}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: TeamID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.88
@@ -2906,6 +2958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 44746857}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &655105132
 Rigidbody2D:
   serializedVersion: 4
@@ -4491,6 +4545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 1777112851}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1149787066
 Rigidbody2D:
   serializedVersion: 4
@@ -4614,6 +4670,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1800875399}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: TeamID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.45
@@ -5242,6 +5306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 607514399}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1371252491
 Rigidbody2D:
   serializedVersion: 4
@@ -5636,6 +5702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 271923916}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1469971334
 Rigidbody2D:
   serializedVersion: 4
@@ -6086,6 +6154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 1711840845}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1508540302
 Rigidbody2D:
   serializedVersion: 4
@@ -6373,6 +6443,8 @@ MonoBehaviour:
   Money2: 0
   LeftTeamCounterOfPoints: 0
   RightTeamCounterOfPoints: 0
+  LeftTeamShootedTimes: 0
+  RightTeamShootedTimes: 0
 --- !u!1 &1532792884
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,6 +6678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 1514449519}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1545019246
 Rigidbody2D:
   serializedVersion: 4
@@ -6920,6 +6994,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 1387015869}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1587751016
 Rigidbody2D:
   serializedVersion: 4
@@ -7007,6 +7083,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1800875399}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: TeamID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7
@@ -7813,6 +7897,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1800875399}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: TeamID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 9afe81c1a653a5641be7f42f3c9be4a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.04
@@ -8201,6 +8293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPrefab: {fileID: 6046487602880795749, guid: f2d39a5db01fe8443a0a162289c25fdd, type: 3}
   BulletPrefabSpawnPosition: {fileID: 2088451853}
+  GlobalValues: {fileID: 0}
+  TeamID: 0
 --- !u!50 &1986464059
 Rigidbody2D:
   serializedVersion: 4
@@ -8288,6 +8382,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377762925}
     m_Modifications:
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: TeamID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 252970646997258943, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
+      propertyPath: GlobalValues
+      value: 
+      objectReference: {fileID: 1528596156}
     - target: {fileID: 1238940259299022750, guid: 8d95b6652475f674395bb567bdffe549, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.95
