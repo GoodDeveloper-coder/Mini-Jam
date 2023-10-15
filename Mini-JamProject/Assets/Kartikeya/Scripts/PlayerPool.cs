@@ -34,6 +34,7 @@ public class PlayerPool : MonoBehaviour
     {
         CharacterMovementScript controller = players[i].GetComponent<CharacterMovementScript>();
         BulletShootScript bullet = players[i].GetComponent<BulletShootScript>();
+        players[i].ToggleActiveUI(on);
         if(!on)
             controller.MakeIdle();
         controller.enabled = on;

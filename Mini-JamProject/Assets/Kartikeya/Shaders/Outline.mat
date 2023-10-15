@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Outline
-  m_Shader: {fileID: 4800000, guid: d8af9d5ed34bcc44b9f7d33c7dfa0203, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 6fb938bda2626664d96ce99acc4a6e5d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -29,7 +29,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2050
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: _Glossiness
@@ -84,7 +84,7 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _BUILTIN_QueueControl: 0
-    - _BUILTIN_QueueOffset: 0
+    - _BUILTIN_QueueOffset: 50
     - _BumpScale: 1
     - _Cutoff: 0.178
     - _DetailNormalMapScale: 1
@@ -100,7 +100,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Thickness: 0.003
+    - _Thickness: 0.03
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:

@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class InkPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject activeUI;
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleActiveUI(bool active)
     {
-        
+        if(activeUI)
+            activeUI.SetActive(active);
     }
 }
