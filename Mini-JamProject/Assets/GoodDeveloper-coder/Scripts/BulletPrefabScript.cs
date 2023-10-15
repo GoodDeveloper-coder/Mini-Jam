@@ -7,6 +7,10 @@ public class BulletPrefabScript : MonoBehaviour
     private Rigidbody2D rb;
     public float BulletSpeed;
 
+    public Animator anim;
+
+    public Collider2D collider2D;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +26,16 @@ public class BulletPrefabScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "InkCharacter" || collision.tag == "Wall")
+        if (collision.tag == "InkCharacter")
         {
             Destroy(this.gameObject);
+        }
+
+        if (collision.tag == "Wall")
+        {
+            anim.SetBool("IsIntersectedWithAll", true);
+            rb.velocity = transform.right * 0;
+            collider2D.enabled = false;
         }
     }
 }

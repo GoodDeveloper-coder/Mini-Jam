@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 263088099, guid: 137e422b6af6fb74e98c00d1009c7ded, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -147,8 +147,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.26679102, y: -0.0022041374}
-  m_Size: {x: 1.4454136, y: 1.1455674}
+  m_Offset: {x: 0.14589733, y: -0.0089203995}
+  m_Size: {x: 1.2036326, y: 1.1052742}
   m_Direction: 1
 --- !u!114 &3783180489465368522
 MonoBehaviour:
@@ -163,6 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletSpeed: 10
+  anim: {fileID: 2170943346985637535}
+  collider2D: {fileID: 4539956014061389946}
 --- !u!95 &2170943346985637535
 Animator:
   serializedVersion: 5

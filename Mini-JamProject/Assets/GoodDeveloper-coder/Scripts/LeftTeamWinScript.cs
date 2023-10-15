@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LeftTeamWinScript : MonoBehaviour
 {
     public GlobalValues GlobalValues;
-    public GameObject LeftTeamWinMenu;
+    public GameObject RightTeamWinMenu;
 
+    public TextMeshProUGUI RightCounterOfPoints;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,7 @@ public class LeftTeamWinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        RightCounterOfPoints.text = string.Format($"{GlobalValues.LeftTeamCounterOfPoints}/5");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,7 +28,7 @@ public class LeftTeamWinScript : MonoBehaviour
         {
             if (GlobalValues.LeftTeamCounterOfPoints >= 5)
             {
-                LeftTeamWinMenu.SetActive(true);     
+                RightTeamWinMenu.SetActive(true);     
             }
             else
             {

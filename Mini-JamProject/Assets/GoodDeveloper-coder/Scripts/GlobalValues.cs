@@ -13,6 +13,9 @@ public class GlobalValues : MonoBehaviour
     public int LeftTeamShootedTimes;
     public int RightTeamShootedTimes;
 
+    public float LeftTeamCharactersSpeed = 5f;
+    public float RightTeamCharactersSpeed = 5f;
+
     // Start is called before the first frame update
     void Start()
     {

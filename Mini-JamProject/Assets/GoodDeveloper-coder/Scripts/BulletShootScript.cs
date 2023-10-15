@@ -11,6 +11,7 @@ public class BulletShootScript : MonoBehaviour
 
     public int TeamID;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class BulletShootScript : MonoBehaviour
     {
         if (TeamID == 1)
         {
-            if (Input.GetKeyDown("r"))
+            if (Input.GetKeyDown("r") && GlobalValues.Money1 >= 1)
             {
                 if (TeamID == 1)
                 {
@@ -34,6 +35,7 @@ public class BulletShootScript : MonoBehaviour
                     {
                         Instantiate(BulletPrefab, BulletPrefabSpawnPosition.transform.position, BulletPrefabSpawnPosition.transform.rotation);
                         GlobalValues.LeftTeamShootedTimes++;
+                        GlobalValues.Money1--;
                     }
                 }
             }
@@ -41,7 +43,7 @@ public class BulletShootScript : MonoBehaviour
 
         if (TeamID == 2)
         {
-            if (Input.GetKeyDown(KeyCode.RightShift))
+            if (Input.GetKeyDown(KeyCode.RightShift) && GlobalValues.Money2 >= 1)
             {
                 if (GlobalValues.RightTeamShootedTimes >= 3)
                 {
@@ -51,6 +53,7 @@ public class BulletShootScript : MonoBehaviour
                 {
                     Instantiate(BulletPrefab, BulletPrefabSpawnPosition.transform.position, BulletPrefabSpawnPosition.transform.rotation);
                     GlobalValues.RightTeamShootedTimes++;
+                    GlobalValues.Money1--;
                 }
             }
         }

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CharacterMovementScript : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    public GlobalValues GlobalValues;
+
+    [SerializeField] float moveSpeed;
     [SerializeField] int playerID = 1;
 
     private Animator animator;
@@ -12,6 +14,16 @@ public class CharacterMovementScript : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (playerID == 1)
+        {
+            GlobalValues.LeftTeamCharactersSpeed = moveSpeed;
+        }
+
+        if (playerID == 2)
+        {
+            GlobalValues.RightTeamCharactersSpeed = moveSpeed;
+        }
     }
 
     public int GetPlayerId()
@@ -31,6 +43,17 @@ public class CharacterMovementScript : MonoBehaviour
 
     void Update()
     {
+        /*
+        if (playerID == 1)
+        {
+            GlobalValues.LeftTeamCharactersSpeed = moveSpeed;
+        }
+
+        if (playerID == 2)
+        {
+            GlobalValues.RightTeamCharactersSpeed = moveSpeed;
+        }
+        */
         float horizontal = Input.GetAxis("Horizontal_P" + playerID);
         float vertical = Input.GetAxis("Vertical_P" + playerID);
 
