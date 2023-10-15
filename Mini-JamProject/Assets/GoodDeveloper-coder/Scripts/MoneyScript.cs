@@ -25,8 +25,8 @@ public class MoneyScript : MonoBehaviour
     {
         //GlobalValues.Money1 += Mathf.MoveTowards(money1desplayscore, GlobalValues.Money1, transitionSpeed * Time.deltaTime);
        // GlobalValues.Money2 += Mathf.MoveTowards(money1desplayscore, GlobalValues.Money1, transitionSpeed * Time.deltaTime);
-        MoneyText1.text = string.Format("Money:{0:0}", GlobalValues.Money1);
-        MoneyText2.text = string.Format("{0:0}:Money", GlobalValues.Money2);
+        MoneyText1.text = string.Format(" {0:0}", GlobalValues.Money1);
+        MoneyText2.text = string.Format(" {0:0}", GlobalValues.Money2);
 
     }
 

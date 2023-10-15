@@ -7,6 +7,9 @@ public class GlobalValues : MonoBehaviour
     public float Money1;
     public float Money2;
 
+    public int LeftTeamCounterOfPoints;
+    public int RightTeamCounterOfPoints;
+
     // Start is called before the first frame update
     void Start()
     {
